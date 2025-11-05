@@ -16,4 +16,14 @@ class LuckyController extends AbstractController{
             'number' => $number,
         ]);
     }
+
+    #[Route('/lucky/string')]
+    public function string(): Response
+    {
+        $string = 'Lucky String';
+
+        return $this->render('lucky/string.html.twig', [
+            'string' => $string,
+        ]);
+    }
 }
