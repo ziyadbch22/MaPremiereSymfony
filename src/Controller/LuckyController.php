@@ -30,10 +30,6 @@ class LuckyController extends AbstractController{
     #[Route('/lucky/image')]
     public function image(): Response
     {
-        $image = 'Lucky Image';
-
-        return $this->render('lucky/image.html.twig', [
-            'image' => $image,
-        ]);
+        return $this->render('lucky/image.html.twig');
     }
 }
